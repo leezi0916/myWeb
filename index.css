@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "42dot Sans", "Noto Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+}
+
+.header > div {
+    display: flex;
+    align-items: center;
+}
+
+#header_1 {
+    justify-content: flex-start;
+    width: 30%;
+}
+
+#header_2 {
+    justify-content: center;
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header_3 {
+    justify-content: flex-end;
+    width: 30%;
+}
+
+#header_3 a {
+    padding: 10px;
+}
+
+/* Content */
+.content {
+    width: 100%;
+    height: auto;
+}
+
+#content_1 {
+    width: 100%;
+    height: auto;
+}
+
+#content_1 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#content_2 {
+    width: 100%;
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#content_2 .button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#content_2 .button img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer */
+.footer {
+    background: #222426;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer_1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footer_1 ul li {
+    padding: 5px 10px;
+}
+
+#footer_1 ul a {
+    color: white;
+    font-size: 14px;
+}
+
+#footer_1 ul span:after {
+    content: "|";
+    color: white;
+}
+
+#footer_2 pre {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ======= 반응형 미디어 쿼리 ======= */
+
+/* 화면 너비가 1024px 이하 (태블릿) */
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #header_1, #header_2, #header_3 {
+        width: 100%;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    #content_2 {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 5%;
+    }
+}
+
+/* 화면 너비가 768px 이하 (모바일) */
+@media screen and (max-width: 768px) {
+    #content_2 {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 5%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    #footer_1 ul {
+        flex-direction: column;
+    }
+
+    #footer_1 ul li {
+        padding: 5px 0;
+    }
+}

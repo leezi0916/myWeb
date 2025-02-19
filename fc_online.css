@@ -1,0 +1,267 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "42dot Sans", "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ol,ul,li{list-style: none;}
+
+#wrapper{
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 10px 0;
+}
+/* header1*/
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 양쪽 정렬 */
+    padding: 14px 20px; /* 상하 14px, 좌우 20px */
+}
+
+.header > div{
+    display: flex;
+    align-items: center;
+}
+
+#header_1 {
+    justify-content: flex-start;
+    width: 30%;
+}
+
+#header_2 {
+    justify-content: center;
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header_3 {
+    justify-content: flex-end;
+    width: 30%;
+}
+
+#header_3 a{
+    padding: 10px;
+}
+
+.navi {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: space-between; /* 양쪽 정렬 */
+    padding: 14px 20px; /* 상하 14px, 좌우 20px */
+}
+
+.navi > div{
+    display: flex;
+    align-items: center;
+}
+
+
+#navi_1 {
+    justify-content: flex-start;
+    width: 20%;
+}
+
+#navi_2 {
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navi_2 > ul{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#navi_2 > ul > li{
+    flex: 1;
+    position: relative;
+}
+
+#navi_3 {
+    justify-content: flex-end;
+    width: 25%;
+    padding: 20px;
+
+}
+#navi_3 > button{
+    padding: 25px;
+    font-size: 30px;
+    background:#09e857;
+    border: 1;
+}
+
+/*content*/
+.content{
+    
+    width: 100%;
+    height: 600px;
+}
+
+#content_1{
+    background: #d15a0c;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+#content_1 >p{
+    width: 70%;
+    font-size: 30px;
+    color: orange;
+    text-align: end;
+    line-height: 100px; /*부모요소와 동일하게*/
+    
+}
+
+#content_1 > ul{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
+#content_1 > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#content_1 a{
+    color: rgb(235, 228, 228);
+}
+
+#content_2{
+    width: 100%;
+    height: 100%;
+    
+}
+
+#content_2 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* guide */
+.guide{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center; /* 가이드 메뉴 전체 가운데 정렬 */
+    align-items: center;
+
+}
+.guide ul {
+    display: flex;
+    gap: 20px; /* 요소 간격 추가 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin: 0;
+}
+.guide ul li {
+    min-width: 100px; /* 최소 너비 지정 */
+    text-align: center;
+}
+
+.guide ul li a {
+    display: block; /* 블록 요소로 변경하여 클릭 영역 확대 */
+    padding: 10px 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* section */
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+#section_1{
+    padding: 80px;
+    font-weight: bold;
+    width: 50%;
+}
+#section_2{
+    padding: 50px;
+    width: 50%;
+}
+
+/* footer */
+.footer{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 0 300px;
+    
+}
+.footer >div{
+    width: 100%;
+}
+#footer_1{
+    height: 55px;
+    width: 100%;
+}
+
+#footer_1 ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#footer_1 ul li{
+    display: flex;
+}
+
+#footer_1 ul a{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#footer_1 ul span:after{
+    content: "|";
+    color: white;
+    
+}
+
+#footer-2 {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#footer_2 pre{
+    font-size: 14px;
+}
+
+#footer_2 p{
+    font-size: 11px;
+    text-align: center;
+    
+}
